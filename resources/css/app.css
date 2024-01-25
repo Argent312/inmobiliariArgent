@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**Estilos generales**/
+h2, h3{
+    text-align: center;
+    margin-top: 5%;
+}
+h3{
+    font-size: xx-large;
+}
+.slogan{
+  text-align: center;
+}
+.container{
+    margin-top: 5%;
+    text-align: center;
+  }
+  .container h3{
+    font-size: xx-large;
+  }
+  .container p{
+    font-size: large;
+  }
+  .reason{
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  /**Responsives Images for the prsentacion page**/
+ 
+  @media (min-width: 320px) and (max-width: 420px){
+    .imgprincipal{
+      max-width: 90%; 
+    }
+    .reason{
+      display: flex;
+      justify-content: center;
+    }
+    .reason img{
+      max-width: 30%;
+    }
+    .reason_complet{
+      margin-top: 20%;
+      background-color: blanchedalmond;
+    }
+  }
+
+  @media(min-width: 481px) and (max-width: 768px){
+    .imgprincipal{
+      max-width: 90%;
+    }
+    .reason{
+      display: flex;
+      justify-content: center;
+    }
+    .reason img{
+      max-width: 30%;
+    }
+    .reason_complet{
+      margin-top: 20%;
+      background-color: blanchedalmond;
+    }
+  }
+
+  @media(min-width: 769px) and (max-width: 1024px){
+    .imgprincipal{
+      max-width: 20%;
+      margin-right: 2%;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .reason{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media(min-width: 1025px) and (max-width: 1200px){
+    .imgprincipal{
+      max-width: 20%;
+      margin-right: 2%;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+    .reason{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .imgprincipal{
+      max-width: 20%;
+      margin-right: 2%;
+    }
+    .reason{
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
